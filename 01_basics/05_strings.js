@@ -40,3 +40,10 @@ let index1 = -7
 
 const newString = gameName
 console.log(newString.slice(0, 5)); 
+
+
+const url = "https://shashank.com/shashank%20gautam"
+console.log(url.replace("%20",'-'));
+
+const Name = "the-quick-brown-fox-jumps-over-the-lazy-dog"
+console.log(Name.split('-'));
