@@ -25,7 +25,7 @@ const newArr = myArr.join() // <---_
 //console.log(newArr);// type string |
 
 
-// slice, splice
+// slice, splice(start, delte count) -> start yha se kar or, itna element delete kar
 
 console.log("A ",myArr);
 
@@ -36,4 +36,4 @@ console.log("B ",myArr);
 
 const myn2 = myArr.splice(1, 3) // splice takes all the element from original array within a range and store it in new array
 console.log("C ",myArr);// expected: [0, 1, 2, 3, 4, 5] ; real output -> [0, 4, 5]
-console.log(myn2);// op -> [1, 2, 3]
+console.log(myn2);// op -> [1, 2, 3] 
