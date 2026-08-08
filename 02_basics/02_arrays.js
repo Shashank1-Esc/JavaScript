@@ -4,12 +4,12 @@ const dc_hereos = ["superman", "flash", "batman"]
 //marvel_heroes.push(dc_hereos)
 
 // console.log(marvel_heroes);
-// console.log(marvel_heroes[3][1]);
+// console.log(marvel_heroes[1][3]);
 
 
 //-------------concat------------------ //
  const dc_marvel = marvel_heroes.concat(dc_hereos);
-//console.log(dc_marvel);
+// console.log(dc_marvel);
 
 
 //---------spread method----------------//

@@ -8,10 +8,10 @@ const myArr2 = new Array(1, 2, 3, 4)
 
 // Array methods
 
-myArr.push(6)
+//myArr.push(6)
 //console.log(myArr);
 
-myArr.pop()
+//myArr.pop()
 
 //myArr.unshift(9)  //unshift push all the values just to add a value in front
 //console.log(myArr)
@@ -19,10 +19,10 @@ myArr.pop()
 //myArr.shift() //remove the element front the front
 //console.log(myArr)
 
-const newArr = myArr.join() // <---_
-                            //      |
+const newArr = myArr.join() // <---__
+                            //       |
 //console.log(myArr);         //     |
-//console.log(newArr);// type string |
+//console.log(newArr);// type string-'
 
 
 // slice, splice(start, delte count) -> start yha se kar or, itna element delete kar
