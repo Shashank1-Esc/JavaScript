@@ -47,11 +47,26 @@ const users = [
     }
 ]
 
-users[1].email; // accessing a element of an object in array
-console.log(tinderUser);
+// console.log(users[1].email); // accessing a element of an object in array
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));// true
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));// true
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor -> normal way to extract a value from object
+const {courseInstructor: instructor} = course // -> extract value using only its key name
+                                              // -> destructring
+//console.log(courseInstructor); 
+console.log(instructor);
+
+
+
