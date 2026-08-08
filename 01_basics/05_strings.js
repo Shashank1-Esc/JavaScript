@@ -3,14 +3,14 @@ const repoCount = 50
 
 
 // With normal quotes ("" or ''), you have to join strings using +:
-console.log("Hello my name is " + name + " and my repo count is " + repoCount);
+//console.log("Hello my name is " + name + " and my repo count is " + repoCount);
 
 // With backticks, JavaScript lets you embed variables directly using ${}:
-console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
+//console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
 const gameName = new String('a hero whoes power still not awaken, but soon.')
 
-//console.log(gameName[0]);
+//console.log(gameName[2]);
 //console.log(gameName.__proto__);
 
 // how many methods we have of string 
@@ -19,12 +19,13 @@ const gameName = new String('a hero whoes power still not awaken, but soon.')
 //console.log(gameName.length);
 
 // 2. anchor
-//console.log(gameName.anchor("shashank"));
+console.log(gameName.anchor("shashank"));
 
 // 3. at(), charAt() -> take a number and give the word at index ; indexOf() -> take the character and return index number
 let index = 5
 let index1 = -7
 //console.log(gameName.charAt(19));
+//console.log(gameName.indexOf('s'));
 
 // 4. big() -> display the string into <big>....</big> 
 //console.log(gameName.big());
