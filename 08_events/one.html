@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color: rgb(44, 43, 43);color: aliceblue;">
+  <h2>Amazing image</h2>
+  <div>
+    <ul id="images">
+      <li><img width="200px" id="grave" src="https://cdn.pixabay.com/photo/2017/03/28/12/21/autumn-2182008_1280.jpg" alt=""></li>
+      <li><img width="200px" id="building" src="https://cdn.pixabay.com/photo/2017/03/28/12/20/architecture-2182003_1280.jpg" alt=""></li>
+      <li><img width="200px" id="climbing" src="https://cdn.pixabay.com/photo/2016/11/19/16/36/mountain-climbing-1840220_1280.jpg" alt=""></li>
+      <li><img width="200px" id="dark-forest" src="https://cdn.pixabay.com/photo/2017/03/27/15/14/forest-2179318_1280.jpg" alt="" ></li>
+      <li><img width="200px" id="lane" src="https://cdn.pixabay.com/photo/2017/03/27/15/10/autumn-2179298_1280.jpg" alt="" ></li>
+      <li><astyle="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+    </ul>
+  </div>
+</body>
+<script>
+  // attachEvent()
+  // jQuery - on
+
+  // type, timestamp, defaultPrevented
+  // target, toElement, srcElement, currentElement,
+  // clientX, clientY, screenX, screenY
+  // altKey, ctrlKey, shiftKey, keyCode
+
+  //addEventListner
+  document.getElementById('images').addEventListener('click',function(e){
+    console.log("clicked inside the ul");
+  },false);
+
+  document.getElementById('dark-forest').addEventListener('click',function(e){
+    console.log("dark forest click");
+  },false); // capturing mode - when true - top to bottom
+  
+  document.getElementById('google').addEventListener('click',function(e){
+    e.preventDefault(); // prevent default mode
+    e.stopPropagation();// only print the message that clicked not the parent one
+    console.log('google clicked')
+  },false)
+
+
+  //vansih images on click
+  document.querySelector('#images').addEventListener('click', function(e){
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'IMG'){
+      console.log(e.target.getElementById);
+      let removeIt = e.target.parentNode;
+      removeIt.remove();
+    }
+
+    //removeIt.parentNode.removeChild(removeIt)
+  },false);
+</script>
+</html>
